@@ -20,20 +20,21 @@
 
 </div>
 
-## ⚠️ Disclaimern
-**This is a fun experimental project** built to explore AI-powered technical assistance. It is **not intended** to:n
-- Replace students or their learning experiencesn
-- Serve as a production tool for classroom usen
-- Provide authoritative answers for courseworkn
-- Replace professional teaching assistants or human tutorsn
-nUse this system as a **supplementary learning tool** and always prioritize student growth over convenience.n
+## ⚠️ Disclaimer
+**This is a fun experimental project** developed by the author to try vibe coding and built to support CS professors with a **$25 yearly annual subscription** to build a team of agents using **[Z.ai GLM-4.7](https://z.ai/blog/glm-4.7)**. It is designed to explore AI-powered technical assistance and is **not intended** to:
+- Replace students or their learning experiences
+- Serve as a production tool for classroom use
+- Provide authoritative answers for coursework
+- Replace professional teaching assistants or human tutors
+
+Use this system as a **supplementary learning tool** and always prioritize student growth over convenience.
 
 
 ---
 
 ## 📖 Overview
 
-The CS Professor Technical Agent Team is a sophisticated multi-agent system designed specifically for computer science professors. It combines **industry-leading engineering standards** from companies like Google, Facebook, Microsoft, and Amazon with **academic rigor** from top research institutions (MIT, Stanford, CMU, UC Berkeley).
+The CS Professor Technical Agent Team is a sophisticated multi-agent system designed specifically for computer science professors. 
 
 This system provides technical support for:
 - **Course Development**: Curriculum design, assignments, and teaching materials
