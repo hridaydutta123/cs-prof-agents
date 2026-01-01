@@ -20,6 +20,10 @@
 
 </div>
 
+<div align="center">
+  <img src="iamthecaptainnow.png" alt="I am the captain now" width="400"/>
+</div>
+
 ## ⚠️ Disclaimer
 **This is a fun experimental project** developed by the author to try vibe coding and built to support CS professors with a **$25 yearly annual subscription** to build a team of agents using **[Z.ai GLM-4.7](https://z.ai/blog/glm-4.7)**. It is designed to explore AI-powered technical assistance and is **not intended** to:
 - Replace students or their learning experiences
