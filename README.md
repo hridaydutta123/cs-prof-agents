@@ -20,6 +20,15 @@
 
 </div>
 
+## ⚠️ Disclaimern
+**This is a fun experimental project** built to explore AI-powered technical assistance. It is **not intended** to:n
+- Replace students or their learning experiencesn
+- Serve as a production tool for classroom usen
+- Provide authoritative answers for courseworkn
+- Replace professional teaching assistants or human tutorsn
+nUse this system as a **supplementary learning tool** and always prioritize student growth over convenience.n
+
+
 ---
 
 ## 📖 Overview
