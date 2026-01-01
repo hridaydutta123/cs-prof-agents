@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 env:
-  NODE_VERSION: '18'
+  NODE_VERSION: "18"
 
 jobs:
   # ========================================
@@ -32,7 +32,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
+          cache: "npm"
 
       - name: Install dependencies
         run: bun install
@@ -75,7 +75,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
+          cache: "npm"
 
       - name: Run npm audit
         run: bun audit --audit-level=moderate
@@ -84,7 +84,7 @@ jobs:
       - name: Check for sensitive data
         run: |
           echo "Checking for potential secrets..."
-          if grep -rE "(password|api[_-]?key|secret|token)" --include="*.md" --include="*.js" --include="*.ts" --exclude-dir=node_modules .; then
+          if grep -rE "(password|api[_-]?key|secret|token)" --include="*.md" --include="*.js" --include="*.ts" --exclude-dir=node_modules --binary-files=without-match .; then
             echo "⚠️  Warning: Potential secrets found"
           else
             echo "✅ No obvious secrets detected"
@@ -161,7 +161,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
+          cache: "npm"
 
       - name: Install dependencies
         run: bun install
@@ -305,7 +305,7 @@ jobs:
       - name: Check for TODO/FIXME comments
         run: |
           echo "Checking for TODO/FIXME comments..."
-          todos=$(grep -rE "TODO|FIXME|HACK|XXX" --include="*.md" --include="*.js" --include="*.ts" --exclude-dir=node_modules . | wc -l)
+          todos=$(grep -rE "TODO|FIXME|HACK|XXX" --include="*.md" --include="*.js" --include="*.ts" --exclude-dir=node_modules --binary-files=without-match . | wc -l)
           echo "Found $todos TODO/FIXME comments"
 
           if [ $todos -gt 0 ]; then
@@ -340,7 +340,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
+          cache: "npm"
 
       - name: Install dependencies
         run: bun install
