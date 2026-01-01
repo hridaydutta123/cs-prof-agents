@@ -423,7 +423,7 @@ cs-prof-agents/
 
 ### Research Standards
 - [NeurIPS Reproducibility Checklist](https://neurips.cc/Conferences/2021/PaperInformation/ReproducibilityChecklist)
-- [ICML Code Review Guidelines](https://icml.cc/2019/review-checklist/)
+- [ICML Code Review Guidelines](https://google.github.io/eng-practices/review/reviewer/)
 - [Papers with Code](https://paperswithcode.com/)
 
 ### Development Tools
