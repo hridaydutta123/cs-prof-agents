@@ -161,14 +161,14 @@ docs/generated/
 api-docs/
 
 # ==========================================
-# OpenCode & AI Tools
+# Agents & AI Tools
 # ==========================================
 
-# OpenCode specific
-.opencode/cache/
-.opencode/logs/
-.opencode/temp/
-.opencode/session/
+# Agents specific
+.agents/cache/
+.agents/logs/
+.agents/temp/
+.agents/session/
 
 # AI-generated artifacts
 *.ai-generated

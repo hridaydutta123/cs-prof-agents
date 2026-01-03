@@ -105,7 +105,6 @@ CS Professor Technical Coordinator (Core Agent)
 ### Prerequisites
 
 - **Node.js** 18+ or **Bun** 1.0+
-- **OpenCode CLI** (latest version)
 - **Git** (for version control examples)
 
 ### Quick Install
@@ -120,20 +119,10 @@ bun install
 # or
 npm install
 
-# Start the system
-opencode start
+# Agents are ready to use
 ```
 
-### Configuration
 
-```bash
-# Configure your OpenCode environment
-opencode config set model GLM-4.7
-opencode config set temperature 0.2
-
-# Verify installation
-opencode doctor
-```
 
 ## 🚀 Quick Start
 
@@ -196,19 +185,19 @@ You can also directly invoke specific subagents for specialized tasks:
 
 ```bash
 # Get web development help
-@.opencode/agent/subagents/web-developer.md
+@.agents/agent/subagents/web-developer.md
 
 # Request code review
-@.opencode/agent/subagents/code-reviewer.md
+@.agents/agent/subagents/code-reviewer.md
 
 # Database optimization
-@.opencode/agent/subagents/database-expert.md
+@.agents/agent/subagents/database-expert.md
 
 # Curriculum design
-@.opencode/agent/subagents/education-specialist.md
+@.agents/agent/subagents/education-specialist.md
 
 # Research code review
-@.opencode/agent/subagents/research-code-reviewer.md
+@.agents/agent/subagents/research-code-reviewer.md
 ```
 
 ## 📋 Agent Capabilities
@@ -395,7 +384,7 @@ All agents use the **GLM-4.7** model for consistent, high-quality responses. Tem
 
 ```
 cs-prof-agents/
-├── .opencode/
+├── .agents/
 │   ├── agent/
 │   │   ├── core.md                      # CS Professor Technical Coordinator
 │   │   └── subagents/
@@ -414,7 +403,8 @@ cs-prof-agents/
 │   │       ├── cybersecurity.md         # Security & vulnerability analysis
 │   │       ├── education-specialist.md  # Pedagogy & curriculum design
 │   │       ├── testing-grading.md       # Automated assessment & grading
-│   │       └── git-version-control.md   # Version control & collaboration
+│   │       ├── git-version-control.md   # Version control & collaboration
+│   │       └── network-scientist.md     # Network analysis & graph data science
 │   ├── examples/                         # Usage examples and scenarios
 │   │   └── usage-examples.md
 │   └── docs/                            # Technical documentation
@@ -441,7 +431,6 @@ cs-prof-agents/
 - [Papers with Code](https://paperswithcode.com/)
 
 ### Development Tools
-- [OpenCode CLI](https://opencode.ai/)
 - [GitHub Education](https://education.github.com/)
 - [Git Large File Storage](https://git-lfs.github.com/)
 
@@ -479,7 +468,6 @@ We welcome contributions to enhance the CS Professor Technical Agent Team!
 4. **Test thoroughly**
    ```bash
    bun install
-   opencode test
    ```
 
 5. **Commit and push**

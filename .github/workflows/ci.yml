@@ -68,7 +68,7 @@ jobs:
       - name: Check agent frontmatter
         run: |
           echo "Validating agent YAML frontmatter..."
-          for file in .opencode/agent/subagents/*.md .opencode/agent/core.md; do
+          for file in .agents/agent/subagents/*.md .agents/agent/core.md; do
             echo "Checking $file"
             if ! grep -q "^---" "$file" || ! grep -q "^description:" "$file"; then
               echo "❌ Invalid frontmatter in $file"
@@ -151,7 +151,7 @@ jobs:
       - name: Check agent documentation
         run: |
           echo "Validating agent documentation..."
-          agent_count=$(ls -1 .opencode/agent/subagents/*.md 2>/dev/null | wc -l)
+          agent_count=$(ls -1 .agents/agent/subagents/*.md 2>/dev/null | wc -l)
           if [ $agent_count -lt 10 ]; then
             echo "❌ Insufficient agent files (found $agent_count, expected at least 10)"
             exit 1
@@ -192,18 +192,18 @@ jobs:
           echo "Validating package.json structure..."
           echo "✅ package.json validation skipped"
 
-      - name: Check OpenCode configuration
+      - name: Check agents configuration
         run: |
-          echo "Checking OpenCode compatibility..."
-          if [ ! -d .opencode ]; then
-            echo "❌ .opencode directory not found"
+          echo "Checking agents compatibility..."
+          if [ ! -d .agents ]; then
+            echo "❌ .agents directory not found"
             exit 1
           fi
-          if [ ! -f .opencode/agent/core.md ]; then
+          if [ ! -f .agents/agent/core.md ]; then
             echo "❌ Core agent not found"
             exit 1
           fi
-          echo "✅ OpenCode structure is valid"
+          echo "✅ Agents structure is valid"
 
   # ========================================
   # Agent Configuration Validation
@@ -224,13 +224,13 @@ jobs:
 
           # Validate core agent
           echo "Validating core agent..."
-          if ! grep -q "mode: primary" .opencode/agent/core.md; then
+          if ! grep -q "mode: primary" .agents/agent/core.md; then
             echo "❌ Core agent missing 'mode: primary'"
             exit_code=1
           fi
 
           # Validate subagents
-          for file in .opencode/agent/subagents/*.md; do
+          for file in .agents/agent/subagents/*.md; do
             echo "Validating $(basename $file)..."
 
             # Check for required frontmatter fields
@@ -305,7 +305,7 @@ jobs:
       - name: Check code coverage
         run: |
           echo "Checking agent coverage..."
-          agent_count=$(ls -1 .opencode/agent/subagents/*.md 2>/dev/null | wc -l)
+          agent_count=$(ls -1 .agents/agent/subagents/*.md 2>/dev/null | wc -l)
           echo "Found $agent_count specialized agents"
 
           if [ $agent_count -lt 15 ]; then
@@ -350,7 +350,7 @@ jobs:
           echo "- **Repository**: ${{ github.repository }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Branch**: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Commit**: ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Agent Count**: $(ls -1 .opencode/agent/subagents/*.md 2>/dev/null | wc -l)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Agent Count**: $(ls -1 .agents/agent/subagents/*.md 2>/dev/null | wc -l)" >> $GITHUB_STEP_SUMMARY
 
   # ========================================
   # Status Report

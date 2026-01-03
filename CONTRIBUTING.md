@@ -39,7 +39,6 @@ We welcome contributions in many forms:
 ### Prerequisites
 
 - Node.js 18+ or Bun 1.0+
-- OpenCode CLI (latest version)
 - Git 2.20+
 - Text editor with YAML and Markdown support (VS Code, etc.)
 
@@ -57,12 +56,6 @@ git remote add upstream https://github.com/ORIGINAL_OWNER/cs-prof-agents.git
 bun install
 # or
 npm install
-
-# Verify OpenCode installation
-opencode doctor
-
-# Start the development environment
-opencode start
 ```
 
 ### Development Workflow
@@ -75,9 +68,6 @@ git checkout -b fix/your-bug-fix
 
 # Make your changes
 # ... edit files ...
-
-# Test your changes
-opencode test
 
 # Commit your changes
 git add .
@@ -324,18 +314,11 @@ Provide solutions that demonstrate [quality principle 1] while maintaining stand
 
 Before submitting a pull request, ensure:
 
-```bash
-# Run the test suite
-opencode test
-
-# Test specific agent
-opencode test --agent .opencode/agent/subagents/your-agent.md
-
-# Lint and validate YAML
-opencode lint
-
-# Run integration tests
-opencode test --integration
+- Agent responds correctly to typical requests in its domain
+- Agent provides appropriate educational explanations
+- Agent follows established quality standards
+- All YAML frontmatter is properly formatted
+- Documentation is complete and accurate
 ```
 
 ### Manual Testing Checklist

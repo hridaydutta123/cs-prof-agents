@@ -115,7 +115,7 @@ jobs:
       - name: Validate agent configurations
         run: |
           echo "Validating all agent files..."
-          for file in .opencode/agent/subagents/*.md .opencode/agent/core.md; do
+          for file in .agents/agent/subagents/*.md .agents/agent/core.md; do
             if ! grep -q "^description:" "$file"; then
               echo "❌ Missing description in $file"
               exit 1
@@ -181,9 +181,9 @@ jobs:
             exit 1
           fi
 
-          # Validate OpenCode structure
-          if [ ! -d .opencode ]; then
-            echo "❌ .opencode directory not found"
+          # Validate agents structure
+          if [ ! -d .agents ]; then
+            echo "❌ .agents directory not found"
             exit 1
           fi
 
@@ -194,13 +194,13 @@ jobs:
           echo "Testing agent configurations..."
 
           # Test core agent
-          if [ ! -f .opencode/agent/core.md ]; then
+          if [ ! -f .agents/agent/core.md ]; then
             echo "❌ Core agent missing"
             exit 1
           fi
 
           # Test subagents
-          agent_count=$(ls -1 .opencode/agent/subagents/*.md 2>/dev/null | wc -l)
+          agent_count=$(ls -1 .agents/agent/subagents/*.md 2>/dev/null | wc -l)
           if [ $agent_count -lt 15 ]; then
             echo "❌ Insufficient agents: $agent_count (expected at least 15)"
             exit 1
@@ -347,8 +347,7 @@ jobs:
           echo "# Install dependencies" >> "$BODY_FILE"
           echo "bun install" >> "$BODY_FILE"
           echo "" >> "$BODY_FILE"
-          echo "# Start the system" >> "$BODY_FILE"
-          echo "opencode start" >> "$BODY_FILE"
+          echo "# Agents are ready to use" >> "$BODY_FILE"
           echo "\`\`\`" >> "$BODY_FILE"
           echo "" >> "$BODY_FILE"
 

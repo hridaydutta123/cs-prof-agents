@@ -69,7 +69,6 @@ Describe any manual testing performed:
 - **OS**: [e.g., macOS 14.2, Ubuntu 22.04, Windows 11]
 - **Node.js Version**: [e.g., 18.19.0, 20.10.0]
 - **Bun Version** (if applicable): [e.g., 1.0.25]
-- **OpenCode CLI Version**: [e.g., 1.0.213]
 
 ## 📋 Related Issues
 

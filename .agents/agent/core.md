@@ -63,27 +63,27 @@ Support CS professors in three primary areas:
 Coordinate with 16 specialized technical subagents based on project needs:
 
 ### Core Development & Implementation
-- **@.opencode/agent/subagents/web-developer.md** - Full-stack web applications, APIs, modern frameworks
-- **@.opencode/agent/subagents/systems-programmer.md** - Low-level systems, OS internals, performance optimization
-- **@.opencode/agent/subagents/database-expert.md** - Database design, SQL/NoSQL optimization, data modeling
-- **@.opencode/agent/subagents/ai-ml-developer.md** - Machine learning, deep learning, model implementation
+- **@.agents/agent/subagents/web-developer.md** - Full-stack web applications, APIs, modern frameworks
+- **@.agents/agent/subagents/systems-programmer.md** - Low-level systems, OS internals, performance optimization
+- **@.agents/agent/subagents/database-expert.md** - Database design, SQL/NoSQL optimization, data modeling
+- **@.agents/agent/subagents/ai-ml-developer.md** - Machine learning, deep learning, model implementation
 
 ### Algorithms & Data Structures
-- **@.opencode/agent/subagents/algorithm-specialist.md** - Algorithm design, complexity analysis, optimization
-- **@.opencode/agent/subagents/performance-profiler.md** - Performance analysis, profiling, benchmarking
-- **@.opencode/agent/subagents/debugging-specialist.md** - Code debugging, error analysis, troubleshooting
+- **@.agents/agent/subagents/algorithm-specialist.md** - Algorithm design, complexity analysis, optimization
+- **@.agents/agent/subagents/performance-profiler.md** - Performance analysis, profiling, benchmarking
+- **@.agents/agent/subagents/debugging-specialist.md** - Code debugging, error analysis, troubleshooting
 
 ### Code Quality & Engineering Standards
-- **@.opencode/agent/subagents/code-reviewer.md** - Code quality assessment, best practices, standards
-- **@.opencode/agent/subagents/research-code-reviewer.md** - Academic code standards, reproducibility, documentation
-- **@.opencode/agent/subagents/testing-qa.md** - Test strategies, TDD, automated testing, coverage
-- **@.opencode/agent/subagents/cybersecurity.md** - Security practices, vulnerability assessment, secure coding
+- **@.agents/agent/subagents/code-reviewer.md** - Code quality assessment, best practices, standards
+- **@.agents/agent/subagents/research-code-reviewer.md** - Academic code standards, reproducibility, documentation
+- **@.agents/agent/subagents/testing-qa.md** - Test strategies, TDD, automated testing, coverage
+- **@.agents/agent/subagents/cybersecurity.md** - Security practices, vulnerability assessment, secure coding
 
 ### Educational & Academic Support
-- **@.opencode/agent/subagents/education-specialist.md** - Pedagogy, curriculum design, teaching strategies
-- **@.opencode/agent/subagents/testing-grading.md** - Automated grading systems, test harnesses, evaluation
-- **@.opencode/agent/subagents/git-version-control.md** - Version control best practices, collaboration workflows
-- **@.opencode/agent/subagents/statistician.md** - Statistical analysis, experimental design, data science
+- **@.agents/agent/subagents/education-specialist.md** - Pedagogy, curriculum design, teaching strategies
+- **@.agents/agent/subagents/testing-grading.md** - Automated grading systems, test harnesses, evaluation
+- **@.agents/agent/subagents/git-version-control.md** - Version control best practices, collaboration workflows
+- **@.agents/agent/subagents/statistician.md** - Statistical analysis, experimental design, data science
 
 ## Coordination Workflow
 
